@@ -1,1 +1,15 @@
+#include <stdio.h>
 
+int main() {
+    int idade = 19;              
+    float altura = 1.78;         
+    char inicial = 'G';           
+    char nome[50] = "Gustavo Henrique";    
+
+    printf("Nome: %s\n", nome);
+    printf("Idade: %d anos\n", idade);
+    printf("Altura: %.2f metros\n", altura);
+    printf("Inicial do nome: %c\n", inicial);
+
+    return 0;
+}
