@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+
+    float latitude = 10.3456;
+    float longitude = 22.2222;
+    char quadrante = 's';
+    int codigo = 22;
+
+    /*Errado:
+    printf("Latitude: %.4f", latitude);
+    printf("Longitude: %.4f", longitude);
+    printf("Quadrante: %c", quadrante);
+    printf("Código: %d", codigo);*/
+
+    printf("Lat: %.4f | Long: %.4f | Quad: %c | Cod: %d\n", latitude, longitude, quadrante, codigo);
+
+    return 0;
+}
