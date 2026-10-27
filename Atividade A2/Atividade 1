@@ -4,7 +4,7 @@ int main() {
     int idade = 19;              
     float altura = 1.78;         
     char inicial = 'G';           
-    char nome[50] = "Gustavo Henrique";    
+    char curso[50] = "Engenharia de Software";    
 
     printf("Nome: %s\n", nome);
     printf("Idade: %d anos\n", idade);
