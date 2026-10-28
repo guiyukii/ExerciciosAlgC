@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+
+    char delimitador1 = '{';
+    char delimitador2 = '*';
+    char delimitador3 = ',';
+
+    printf("O primeiro caractere é '%c', O segundo é '%c', O terceiro é '%c' .", delimitador1, delimitador2, delimitador3);
+
+    return 0;
+}
