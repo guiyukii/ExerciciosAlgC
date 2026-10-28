@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+    int dia = 18;
+    int mes = 3;
+    int ano = 2007;
+    float versao = 22.5;
+
+    printf("Lancamento: %d/%d/%d - Versao %.1f\n", dia, mes, ano, versao);
+
+    return 0;
+}
