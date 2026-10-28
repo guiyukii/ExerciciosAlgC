@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    float celsius;
+    float fahrenheit;
+    float kelvin;
+
+    printf("Insira o valor de graus em Celsius: ");
+    scanf("%f",&celsius);
+
+    fahrenheit =  (celsius * 9.0 / 5.0) + 32.0;
+    kelvin = celsius + 273.15;
+
+    printf("Graus em Celsius: %.2f\n", celsius);
+    printf("Graus em Fahrenheit: %.2f\n",fahrenheit);
+    printf("Graus em kelvin: %.2f\n",kelvin);
+}
