@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    char componente[30] = "LM317";
+    float tensao = 12.0; 
+    int lote_fab = 22;
+    char classe = 'A';
+
+    printf("=== Ficha Técnina ===\n");
+    printf("Componente: %s\n", componente);
+    printf("Tensão Nominal: %.1f V\n", tensao);
+    printf("Lote: %d\n", lote_fab);
+    printf("Classe de eficiência: %c\n", classe);
+
+    return 0;
+}
