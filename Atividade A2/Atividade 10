@@ -14,4 +14,6 @@ int main() {
     printf("Graus em Celsius: %.2f\n", celsius);
     printf("Graus em Fahrenheit: %.2f\n",fahrenheit);
     printf("Graus em kelvin: %.2f\n",kelvin);
+
+    return 0;
 }
