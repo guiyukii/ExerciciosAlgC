@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int agencia = 1234;
+    int conta_destino = 56789;
+    float valor = 150.00;
+    char canal = 'C';
+
+    printf("Agencia: %d\n\n", agencia);
+    printf("Conta Destino: %d\n\n", conta_destino);
+    printf("Valor: R$%.2f\n\n", valor);
+    printf("Canal: %c\n\n", canal);
+
+    return 0;
+}
