@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main () {
+
+    int requisicoes = 22;
+    float consumo_ram = 22.22;
+    char estado_operacional = 'A';
+    char protocolo[10]= "TCP"; 
+
+    printf("Servidor: %d requisicoes | RAM em uso: %.2f%% | Estado: %c | Protocolo: %s\n", requisicoes, consumo_ram, estado_operacional, protocolo);
+
+    return 0;
+}
