@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main() {
+    int x;
+    int y;
+    int soma;
+    int subtracao;
+    int multiplicacao;
+    int divisao;
+    int resto;
+
+    printf("Digite um Valor inteiro para x: ");
+    scanf("%d", &x);
+
+    printf("Digite um Valor inteiro para y: ");
+    scanf("%d", &y);
+
+    soma = x + y;
+    subtracao = x - y;
+    multiplicacao = x * y;
+    divisao = x / y;
+    resto = x % y;
+
+    printf("Soma: %d\n",soma);
+    printf("Subtração: %d\n", subtracao);
+    printf("Multiplicação: %d\n", multiplicacao);
+    printf("Divisão: %d\n",divisao);
+    printf("Resto: %d\n", resto);
+
+    return 0;
+}
