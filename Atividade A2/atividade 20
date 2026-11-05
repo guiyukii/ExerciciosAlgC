@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main(void) {
+    float a, b, moduloA, moduloB;
+
+    printf("Primeiro numero: ");
+    scanf("%f", &a);
+    printf("Segundo numero: ");
+    scanf("%f", &b);
+
+    if (a > b) {
+        printf("Maior valor numerico: %.2f\n", a);
+    } else if (a == b) {
+        printf("Os valores numericos sao iguais.\n");
+    } else {
+        printf("Maior valor numerico: %.2f\n", b);
+    }
+
+    moduloA = (a < 0.0f) ? -a : a;
+    moduloB = (b < 0.0f) ? -b : b;
+
+    if (moduloA > moduloB) {
+        printf("Maior magnitude absoluta: %.2f (primeiro numero)\n", moduloA);
+    } else if (moduloA == moduloB) {
+        printf("Os dois numeros possuem a mesma magnitude absoluta.\n");
+    } else {
+        printf("Maior magnitude absoluta: %.2f (segundo numero)\n", moduloB);
+    }
+    return 0;
+}
