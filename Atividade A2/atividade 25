@@ -1,0 +1,15 @@
+void ex25(void) {
+    double media, freq;
+    printf("Media semestral: ");
+    scanf("%lf", &media);
+    printf("Frequencia (%%): ");
+    scanf("%lf", &freq);
+ 
+    if (media >= 6.0 && freq >= 75.0) {
+        printf("Situacao: APROVADO.\n");
+    } else if (freq >= 75.0 && media >= 4.0 && media < 6.0) {
+        printf("Situacao: EXAME DE RECUPERACAO.\n");
+    } else {
+        printf("Situacao: REPROVADO.\n");
+    }
+}
