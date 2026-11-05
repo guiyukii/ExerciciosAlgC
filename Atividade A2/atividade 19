@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main(void) {
+    float dividendo, divisor;
+
+    printf("Numerador: ");
+    scanf("%f", &dividendo);
+    printf("Denominador: ");
+    scanf("%f", &divisor);
+
+    if (divisor != 0.0f) {
+        printf("Resultado: %.2f\n", dividendo / divisor);
+    } else {
+        printf("Erro matematico: divisao por zero.\n");
+    }
+    return 0;
+}
