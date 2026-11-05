@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(void) {
+int main() {
     int n, i;
     float nota1, nota2, media, somaMedias = 0.0f;
 
