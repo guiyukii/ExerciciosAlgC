@@ -1,0 +1,29 @@
+void ex30(void) {
+    int id, bloqueado;
+    printf("ID do cracha: ");
+    scanf("%d", &id);
+    printf("Suspenso? (1 = sim, 0 = nao): ");
+    scanf("%d", &bloqueado);
+ 
+    if (id == 1001 && !bloqueado) {
+        printf("ACESSO LIBERADO.\n");
+    } else {
+        printf("ACESSO NEGADO.\n");
+    }
+}
+ 
+int main(void) {
+    int opcao;
+    void (*exercicios[])(void) = {ex21, ex22, ex23, ex24, ex25,
+                                  ex26, ex27, ex28, ex29, ex30};
+ 
+    printf("Qual exercicio executar? (21 a 30): ");
+    scanf("%d", &opcao);
+ 
+    if (opcao >= 21 && opcao <= 30) {
+        exercicios[opcao - 21]();
+    } else {
+        printf("Opcao invalida.\n");
+    }
+    return 0;
+}
