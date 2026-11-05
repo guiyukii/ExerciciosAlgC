@@ -1,0 +1,13 @@
+void ex27(void) {
+    int idade, contribuicao;
+    printf("Idade (anos): ");
+    scanf("%d", &idade);
+    printf("Tempo de contribuicao (anos): ");
+    scanf("%d", &contribuicao);
+ 
+    if (idade >= 65 || contribuicao >= 35) {
+        printf("Aposentadoria AUTORIZADA.\n");
+    } else {
+        printf("Aposentadoria NEGADA: requisitos nao atendidos.\n");
+    }
+}
