@@ -1,0 +1,54 @@
+#include <stdio.h>
+
+int main(void) {
+    int codigo, pagamento, quantidade = 0;
+    float preco, total = 0.0f, desconto = 0.0f, totalFinal, recebido;
+
+    printf("Codigo do item (0 encerra): ");
+    scanf("%d", &codigo);
+
+    while (codigo != 0) {
+        printf("Preco do item (R$): ");
+        scanf("%f", &preco);
+        if (preco >= 0.0f) {
+            total += preco;
+            quantidade++;
+        } else {
+            printf("Preco invalido; item desconsiderado.\n");
+        }
+        printf("Codigo do item (0 encerra): ");
+        scanf("%d", &codigo);
+    }
+
+    printf("\nTotal bruto: R$ %.2f\n", total);
+    printf("Forma de pagamento (1 - Dinheiro; 2 - Cartao): ");
+    scanf("%d", &pagamento);
+
+    if (pagamento == 1) {
+        desconto = total * 0.05f;
+        totalFinal = total - desconto;
+        printf("Valor a pagar: R$ %.2f\n", totalFinal);
+        printf("Valor recebido (R$): ");
+        scanf("%f", &recebido);
+        while (recebido < totalFinal) {
+            printf("Valor insuficiente. Informe novamente: ");
+            scanf("%f", &recebido);
+        }
+    } else if (pagamento == 2) {
+        totalFinal = total;
+        recebido = 0.0f;
+    } else {
+        printf("Forma de pagamento invalida.\n");
+        return 1;
+    }
+    printf("Itens registrados: %d\n", quantidade);
+    printf("Total bruto: R$ %.2f\n", total);
+    printf("Desconto: R$ %.2f\n", desconto);
+    printf("Total pago: R$ %.2f\n", totalFinal);
+    printf("Pagamento: %s\n", pagamento == 1 ? "Dinheiro" : "Cartao");
+    if (pagamento == 1) {
+        printf("Recebido: R$ %.2f\n", recebido);
+        printf("Troco: R$ %.2f\n", recebido - totalFinal);
+    }
+    return 0;
+}
