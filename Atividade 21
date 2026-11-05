@@ -1,0 +1,12 @@
+void ex21(void) {
+    double total;
+    printf("Valor total do carrinho (R$): ");
+    scanf("%lf", &total);
+
+    if (total > 250.0) {
+        double desconto = total * 0.10;
+        total -= desconto;
+        printf("Desconto de 10%% aplicado (-R$ %.2f).\n", desconto);
+    }
+    printf("Valor final a pagar: R$ %.2f\n", total);
+}
