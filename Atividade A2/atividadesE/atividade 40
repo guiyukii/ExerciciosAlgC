@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main(void) {
+    int a1, razao, n, i, termo;
+
+    printf("Primeiro termo: ");
+    scanf("%d", &a1);
+    printf("Razao da PA: ");
+    scanf("%d", &razao);
+    printf("Quantidade de termos: ");
+    scanf("%d", &n);
+
+    if (n <= 0) {
+        printf("A quantidade de termos deve ser positiva.\n");
+        return 1;
+    }
+
+    printf("PA: ");
+    for (i = 0; i < n; i++) {
+        termo = a1 + i * razao;
+        printf("%d", termo);
+        if (i < n - 1) {
+            printf(", ");
+        }
+    }
+    printf("\n");
+    return 0;
+}
