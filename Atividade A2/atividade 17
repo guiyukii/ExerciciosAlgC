@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main(void) {
+    int idade;
+
+    printf("Informe a idade: ");
+    scanf("%d", &idade);
+
+    if (idade >= 18) {
+        printf("Apto a iniciar o processo de habilitacao.\n");
+    } else {
+        printf("Nao apto: menor de 18 anos.\n");
+    }
+    return 0;
+}
