@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main(void) {
+    int n, i;
+    float nota1, nota2, media, somaMedias = 0.0f;
+
+    printf("Quantidade de alunos: ");
+    scanf("%d", &n);
+
+    if (n <= 0) {
+        printf("A quantidade deve ser positiva.\n");
+        return 1;
+    }
+
+    for (i = 1; i <= n; i++) {
+        printf("\nAluno %d - nota 1: ", i);
+        scanf("%f", &nota1);
+        printf("Aluno %d - nota 2: ", i);
+        scanf("%f", &nota2);
+
+        media = (nota1 + nota2) / 2.0f;
+        somaMedias += media;
+        printf("Media do aluno %d: %.2f - %s\n", i, media,
+               (media >= 6.0f) ? "Aprovado" : "Reprovado");
+    }
+
+    printf("\nMedia geral da turma: %.2f\n", somaMedias / n);
+    return 0;
+}
