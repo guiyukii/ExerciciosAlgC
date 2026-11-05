@@ -1,0 +1,11 @@
+void ex23(void) {
+    int estoque;
+    printf("Saldo fisico do insumo hospitalar (unidades): ");
+    scanf("%d", &estoque);
+ 
+    if (estoque < 50) {
+        printf("ALERTA: estoque abaixo do minimo de seguranca! Reposicao urgente.\n");
+    } else {
+        printf("Estoque estavel: nivel de seguranca atendido.\n");
+    }
+}
