@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main(void) {
+    int opcao = -1;
+    float a, b;
+
+    while (opcao != 0) {
+        printf("\n1 - Soma\n2 - Multiplicacao\n0 - Sair\nOpcao: ");
+        scanf("%d", &opcao);
+
+        if (opcao == 1 || opcao == 2) {
+            printf("Primeiro numero: ");
+            scanf("%f", &a);
+            printf("Segundo numero: ");
+            scanf("%f", &b);
+
+            if (opcao == 1) {
+                printf("Soma: %.2f\n", a + b);
+            } else {
+                printf("Produto: %.2f\n", a * b);
+            }
+        } else if (opcao != 0) {
+            printf("Opcao invalida.\n");
+        }
+    }
+
+    printf("Programa encerrado.\n");
+    return 0;
+}
