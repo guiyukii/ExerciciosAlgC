@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main(void) {
+    int numero, quantidade = 0, soma = 0;
+
+    printf("Digite um inteiro (0 encerra): ");
+    scanf("%d", &numero);
+
+    while (numero != 0) {
+        soma += numero;
+        quantidade++;
+        printf("Digite um inteiro (0 encerra): ");
+        scanf("%d", &numero);
+    }
+
+    printf("Quantidade de numeros: %d\n", quantidade);
+    printf("Soma dos numeros: %d\n", soma);
+    return 0;
+}
